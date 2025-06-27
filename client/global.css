@@ -6,87 +6,87 @@
 
 @layer base {
   /**
-   * VoltSystems Minecraft-themed color palette
+   * VoltSystems Black Theme with Minecraft elements
    * HSL format for Tailwind CSS compatibility
    */
   :root {
-    --background: 210 20% 98%;
-    --foreground: 220 15% 10%;
+    --background: 220 15% 4%; /* Deep black */
+    --foreground: 210 20% 95%; /* Light text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 10%;
+    --card: 220 15% 6%; /* Slightly lighter black for cards */
+    --card-foreground: 210 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 10%;
+    --popover: 220 15% 6%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 135 75% 45%; /* Minecraft green */
-    --primary-foreground: 0 0% 100%;
+    --primary: 135 75% 55%; /* Bright Minecraft green */
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 210 15% 92%;
-    --secondary-foreground: 220 15% 15%;
+    --secondary: 220 15% 10%;
+    --secondary-foreground: 210 20% 90%;
 
-    --muted: 210 15% 95%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 220 15% 8%;
+    --muted-foreground: 210 15% 60%;
 
-    --accent: 200 100% 50%; /* Minecraft blue/diamond */
-    --accent-foreground: 0 0% 100%;
+    --accent: 200 100% 60%; /* Bright Minecraft blue */
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 15% 88%;
-    --input: 210 15% 88%;
-    --ring: 135 75% 45%;
+    --border: 220 15% 15%; /* Subtle borders */
+    --input: 220 15% 12%;
+    --ring: 135 75% 55%;
 
-    --radius: 8px;
+    --radius: 12px; /* More rounded for modern feel */
 
     /* Minecraft-specific colors */
-    --minecraft-green: 135 75% 45%;
-    --minecraft-dark-green: 135 75% 35%;
-    --minecraft-blue: 200 100% 50%;
-    --minecraft-dark-blue: 200 100% 40%;
-    --minecraft-stone: 220 10% 70%;
-    --minecraft-dark-stone: 220 15% 25%;
-    --minecraft-gold: 45 100% 50%;
-    --minecraft-redstone: 0 100% 50%;
+    --minecraft-green: 135 75% 55%;
+    --minecraft-dark-green: 135 75% 45%;
+    --minecraft-blue: 200 100% 60%;
+    --minecraft-dark-blue: 200 100% 50%;
+    --minecraft-stone: 220 10% 25%;
+    --minecraft-dark-stone: 220 15% 15%;
+    --minecraft-gold: 45 100% 60%;
+    --minecraft-redstone: 0 100% 60%;
 
-    --sidebar-background: 210 20% 97%;
-    --sidebar-foreground: 220 15% 15%;
-    --sidebar-primary: 135 75% 45%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 15% 93%;
-    --sidebar-accent-foreground: 220 15% 15%;
-    --sidebar-border: 210 15% 85%;
-    --sidebar-ring: 135 75% 45%;
+    --sidebar-background: 220 15% 5%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 135 75% 55%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 220 15% 8%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 15% 12%;
+    --sidebar-ring: 135 75% 55%;
   }
 
   .dark {
-    --background: 220 20% 8%;
+    --background: 220 15% 4%;
     --foreground: 210 20% 95%;
 
-    --card: 220 20% 10%;
+    --card: 220 15% 6%;
     --card-foreground: 210 20% 95%;
 
-    --popover: 220 20% 10%;
+    --popover: 220 15% 6%;
     --popover-foreground: 210 20% 95%;
 
-    --primary: 135 75% 55%; /* Brighter green for dark mode */
+    --primary: 135 75% 55%;
     --primary-foreground: 0 0% 0%;
 
-    --secondary: 220 15% 15%;
+    --secondary: 220 15% 10%;
     --secondary-foreground: 210 20% 90%;
 
-    --muted: 220 15% 12%;
+    --muted: 220 15% 8%;
     --muted-foreground: 210 15% 60%;
 
-    --accent: 200 100% 60%; /* Brighter blue for dark mode */
+    --accent: 200 100% 60%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
+    --border: 220 15% 15%;
+    --input: 220 15% 12%;
     --ring: 135 75% 55%;
 
     /* Dark mode Minecraft colors */
@@ -94,18 +94,18 @@
     --minecraft-dark-green: 135 75% 45%;
     --minecraft-blue: 200 100% 60%;
     --minecraft-dark-blue: 200 100% 50%;
-    --minecraft-stone: 220 10% 40%;
+    --minecraft-stone: 220 10% 25%;
     --minecraft-dark-stone: 220 15% 15%;
     --minecraft-gold: 45 100% 60%;
     --minecraft-redstone: 0 100% 60%;
 
-    --sidebar-background: 220 20% 6%;
+    --sidebar-background: 220 15% 5%;
     --sidebar-foreground: 210 20% 90%;
     --sidebar-primary: 135 75% 55%;
     --sidebar-primary-foreground: 0 0% 0%;
-    --sidebar-accent: 220 15% 12%;
+    --sidebar-accent: 220 15% 8%;
     --sidebar-accent-foreground: 210 20% 90%;
-    --sidebar-border: 220 15% 15%;
+    --sidebar-border: 220 15% 12%;
     --sidebar-ring: 135 75% 55%;
   }
 }
@@ -128,6 +128,26 @@
     font-family: "Minecraft", monospace;
   }
 
+  /* Apple-style liquid glass effect */
+  .glass-nav {
+    backdrop-filter: blur(20px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      0 0 20px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* Enhanced glass morphism for cards */
+  .glass-card {
+    backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
   /* Minecraft-style pixelated borders */
   .minecraft-border {
     image-rendering: pixelated;
@@ -140,7 +160,30 @@
     transition:
       background-color 0.3s ease,
       border-color 0.3s ease,
-      color 0.3s ease;
+      color 0.3s ease,
+      backdrop-filter 0.3s ease;
+  }
+
+  /* Gradient overlays for depth */
+  .gradient-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(54, 226, 97, 0.1) 0%,
+      rgba(51, 187, 255, 0.1) 100%
+    );
+  }
+
+  /* Enhanced glow effects */
+  .glow-green {
+    box-shadow:
+      0 0 20px rgba(54, 226, 97, 0.3),
+      0 0 40px rgba(54, 226, 97, 0.1);
+  }
+
+  .glow-blue {
+    box-shadow:
+      0 0 20px rgba(51, 187, 255, 0.3),
+      0 0 40px rgba(51, 187, 255, 0.1);
   }
 }
 
@@ -171,5 +214,18 @@
 
   .border-minecraft-green {
     border-color: hsl(var(--minecraft-green));
+  }
+
+  /* Glass morphism utilities */
+  .backdrop-blur-glass {
+    backdrop-filter: blur(20px) saturate(180%);
+  }
+
+  .bg-glass {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .border-glass {
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }

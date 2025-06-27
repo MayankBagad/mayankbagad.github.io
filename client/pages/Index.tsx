@@ -28,7 +28,7 @@ import {
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Header />
 
       {/* Hero Section */}
@@ -73,7 +73,7 @@ export default function Index() {
       {/* Stats Section */}
       <section className="py-16 bg-muted/50">
         <div className="container">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center max-w-3xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-minecraft-green mb-2">
                 99.9%
@@ -82,30 +82,24 @@ export default function Index() {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-minecraft-blue mb-2">
-                50K+
+                300+
               </div>
               <div className="text-sm text-muted-foreground">
-                Active Servers
+                Active Players
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center flex flex-col">
               <div className="text-3xl font-bold text-minecraft-gold mb-2">
                 24/7
               </div>
               <div className="text-sm text-muted-foreground">Support</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-minecraft-green mb-2">
-                5★
-              </div>
-              <div className="text-sm text-muted-foreground">Rating</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20">
+      <section id="features" className="py-20 ml-auto">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4">
