@@ -33,18 +33,18 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="py-20 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-tech-lavender/10 via-background to-tech-violet/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-minecraft-grass/20 via-background to-minecraft-cyan/15"></div>
         <div className="container relative">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge className="mb-4 bg-tech-lavender/10 text-tech-lavender border-tech-lavender/20">
+            <Badge className="mb-4 minecraft-gradient-grass text-white border-minecraft-grass/30 minecraft-block pixel-font">
               ⚡ Lightning Fast Servers
             </Badge>
-            <h1 className="text-4xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-tech-lavender to-tech-violet bg-clip-text text-transparent">
+            <h1 className="text-4xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-minecraft-grass to-minecraft-cyan bg-clip-text text-transparent minecraft-font">
               Premium Minecraft
               <br />
               Server Hosting
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto pixel-font">
               Power your Minecraft world with VoltSystems. Lightning-fast
               performance, 99.9% uptime, and 24/7 support for the ultimate
               gaming experience.
@@ -52,7 +52,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <MinecraftButton
                 size="lg"
-                className="text-lg px-8 bg-tech-lavender hover:bg-tech-lavender-dark"
+                className="text-lg px-8 minecraft-gradient-grass minecraft-block minecraft-font"
               >
                 <Play className="mr-2 h-5 w-5" />
                 Start Your Server
@@ -60,13 +60,13 @@ export default function Index() {
               <MinecraftButton
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 border-tech-lavender text-tech-lavender hover:bg-tech-lavender hover:text-white"
+                className="text-lg px-8 border-minecraft-cyan text-minecraft-cyan hover:bg-minecraft-cyan hover:text-white minecraft-block minecraft-font"
               >
                 <Globe className="mr-2 h-5 w-5" />
                 View Plans
               </MinecraftButton>
             </div>
-            <p className="text-sm text-muted-foreground mt-4">
+            <p className="text-sm text-muted-foreground mt-4 pixel-font">
               Start your free trial • No setup fees • Cancel anytime
             </p>
           </div>
@@ -78,22 +78,28 @@ export default function Index() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-tech-lavender mb-2">
+              <div className="text-3xl font-bold text-minecraft-grass mb-2 minecraft-font">
                 99.9%
               </div>
-              <div className="text-sm text-muted-foreground">Uptime</div>
+              <div className="text-sm text-muted-foreground pixel-font">
+                Uptime
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-tech-violet mb-2">
+              <div className="text-3xl font-bold text-minecraft-cyan mb-2 minecraft-font">
                 300+
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-sm text-muted-foreground pixel-font">
                 Active Players
               </div>
             </div>
             <div className="text-center flex flex-col">
-              <div className="text-3xl font-bold text-tech-cyan mb-2">24/7</div>
-              <div className="text-sm text-muted-foreground">Support</div>
+              <div className="text-3xl font-bold text-minecraft-gold mb-2 minecraft-font">
+                24/7
+              </div>
+              <div className="text-sm text-muted-foreground pixel-font">
+                Support
+              </div>
             </div>
           </div>
         </div>
@@ -103,89 +109,99 @@ export default function Index() {
       <section id="features" className="py-20 ml-auto">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-              Why Choose <span className="text-tech-lavender">VoltSystems</span>
-              ?
+            <h2 className="text-3xl lg:text-5xl font-bold mb-4 minecraft-font">
+              Why Choose{" "}
+              <span className="text-minecraft-grass">VoltSystems</span>?
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto pixel-font">
               Built for gamers, by gamers. Experience the difference with our
               cutting-edge infrastructure and passionate support team.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-lavender/20">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:scale-105 hover:shadow-green-500/30 minecraft-block cursor-pointer hover:rotate-1">
               <CardHeader>
-                <div className="w-12 h-12 bg-tech-lavender/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Zap className="h-6 w-6 text-tech-lavender" />
+                <div className="w-12 h-12 minecraft-gradient-grass minecraft-block flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                  <Zap className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle>Lightning Performance</CardTitle>
-                <CardDescription>
+                <CardTitle className="minecraft-font">
+                  Lightning Performance
+                </CardTitle>
+                <CardDescription className="pixel-font">
                   NVMe SSDs and latest-gen CPUs deliver unmatched speed and
                   responsiveness.
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-violet/20">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:scale-105 hover:shadow-cyan-500/30 minecraft-block cursor-pointer hover:rotate-1">
               <CardHeader>
-                <div className="w-12 h-12 bg-tech-violet/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Shield className="h-6 w-6 text-tech-violet" />
+                <div className="w-12 h-12 minecraft-gradient-cyan minecraft-block flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                  <Shield className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle>DDoS Protection</CardTitle>
-                <CardDescription>
+                <CardTitle className="minecraft-font">
+                  DDoS Protection
+                </CardTitle>
+                <CardDescription className="pixel-font">
                   Enterprise-grade protection keeps your server online during
                   attacks.
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-cyan/20">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:scale-105 hover:shadow-yellow-500/30 minecraft-block cursor-pointer hover:rotate-1">
               <CardHeader>
-                <div className="w-12 h-12 bg-tech-cyan/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Clock className="h-6 w-6 text-tech-cyan" />
+                <div className="w-12 h-12 minecraft-gradient-gold minecraft-block flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                  <Clock className="h-6 w-6 text-black" />
                 </div>
-                <CardTitle>Instant Setup</CardTitle>
-                <CardDescription>
+                <CardTitle className="minecraft-font">Instant Setup</CardTitle>
+                <CardDescription className="pixel-font">
                   Get your server running in under 60 seconds with our automated
                   deployment.
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-purple/20">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:scale-105 hover:shadow-green-500/30 minecraft-block cursor-pointer hover:rotate-1">
               <CardHeader>
-                <div className="w-12 h-12 bg-tech-purple/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Users className="h-6 w-6 text-tech-purple" />
+                <div className="w-12 h-12 minecraft-gradient-grass minecraft-block flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                  <Users className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle>24/7 Expert Support</CardTitle>
-                <CardDescription>
+                <CardTitle className="minecraft-font">
+                  24/7 Expert Support
+                </CardTitle>
+                <CardDescription className="pixel-font">
                   Our Minecraft experts are always ready to help via Discord,
                   tickets, or live chat.
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-indigo/20">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:scale-105 hover:shadow-cyan-500/30 minecraft-block cursor-pointer hover:rotate-1">
               <CardHeader>
-                <div className="w-12 h-12 bg-tech-indigo/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Download className="h-6 w-6 text-tech-indigo" />
+                <div className="w-12 h-12 minecraft-gradient-cyan minecraft-block flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                  <Download className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle>One-Click Modpacks</CardTitle>
-                <CardDescription>
+                <CardTitle className="minecraft-font">
+                  One-Click Modpacks
+                </CardTitle>
+                <CardDescription className="pixel-font">
                   Install popular modpacks like FTB, Tekkit, and custom packs
                   with just one click.
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-pink/20">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:scale-105 hover:shadow-yellow-500/30 minecraft-block cursor-pointer hover:rotate-1">
               <CardHeader>
-                <div className="w-12 h-12 bg-tech-pink/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <HardDrive className="h-6 w-6 text-tech-pink" />
+                <div className="w-12 h-12 minecraft-gradient-gold minecraft-block flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                  <HardDrive className="h-6 w-6 text-black" />
                 </div>
-                <CardTitle>Automatic Backups</CardTitle>
-                <CardDescription>
+                <CardTitle className="minecraft-font">
+                  Automatic Backups
+                </CardTitle>
+                <CardDescription className="pixel-font">
                   Never lose your progress with automated daily backups and easy
                   restore options.
                 </CardDescription>
@@ -199,10 +215,10 @@ export default function Index() {
       <section id="pricing" className="py-20 bg-muted/50">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-              Simple, <span className="text-tech-lavender">Fair</span> Pricing
+            <h2 className="text-3xl lg:text-5xl font-bold mb-4 minecraft-font">
+              Simple, <span className="text-minecraft-grass">Fair</span> Pricing
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto pixel-font">
               Start small and scale up as your community grows. No hidden fees,
               no surprises.
             </p>
@@ -222,24 +238,24 @@ export default function Index() {
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">2GB RAM</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">2GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">Up to 10 players</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">Up to 10 players</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">25GB SSD storage</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">25GB SSD storage</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">Free subdomain</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">Free subdomain</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">24/7 support</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">24/7 support</span>
                   </div>
                 </div>
                 <MinecraftButton className="w-full" variant="outline">
@@ -249,9 +265,9 @@ export default function Index() {
             </Card>
 
             {/* Pro Plan */}
-            <Card className="relative border-tech-lavender shadow-lg scale-105 shadow-tech-lavender/20">
+            <Card className="relative border-minecraft-grass shadow-lg scale-105 shadow-minecraft-grass/30 minecraft-block">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-tech-lavender text-white">
+                <Badge className="minecraft-gradient-grass text-white minecraft-block pixel-font">
                   Most Popular
                 </Badge>
               </div>
@@ -354,21 +370,21 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-tech-lavender/5">
+      <section className="py-20 bg-minecraft-grass/10">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-5xl font-bold mb-6 minecraft-font">
               Ready to Power Up Your{" "}
-              <span className="text-tech-lavender">Minecraft World</span>?
+              <span className="text-minecraft-grass">Minecraft World</span>?
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-muted-foreground mb-8 pixel-font">
               Join thousands of server owners who chose VoltSystems for
               reliable, high-performance Minecraft hosting.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <MinecraftButton
                 size="lg"
-                className="text-lg px-8 bg-tech-lavender hover:bg-tech-lavender-dark"
+                className="text-lg px-8 minecraft-gradient-grass minecraft-block minecraft-font"
               >
                 <Zap className="mr-2 h-5 w-5" />
                 Start Your Free Trial
@@ -376,13 +392,13 @@ export default function Index() {
               <MinecraftButton
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 border-tech-lavender text-tech-lavender hover:bg-tech-lavender hover:text-white"
+                className="text-lg px-8 border-minecraft-cyan text-minecraft-cyan hover:bg-minecraft-cyan hover:text-white minecraft-block minecraft-font"
               >
                 <Users className="mr-2 h-5 w-5" />
                 Talk to Sales
               </MinecraftButton>
             </div>
-            <p className="text-sm text-muted-foreground mt-6">
+            <p className="text-sm text-muted-foreground mt-6 pixel-font">
               7-day free trial • No credit card required • Setup in 60 seconds
             </p>
           </div>

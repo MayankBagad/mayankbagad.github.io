@@ -9,16 +9,16 @@ const minecraftButtonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-tech-lavender text-white hover:bg-tech-lavender-dark shadow-lg hover:shadow-xl hover:shadow-tech-lavender/25 transform hover:-translate-y-0.5 transition-all duration-200",
+          "minecraft-gradient-grass text-white hover:opacity-90 shadow-lg hover:shadow-xl hover:shadow-green-500/40 transform hover:-translate-y-1 transition-all duration-200 minecraft-block",
         destructive:
-          "bg-red-500 text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200",
+          "bg-red-600 text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 minecraft-block",
         outline:
-          "border-2 border-tech-lavender text-tech-lavender hover:bg-tech-lavender hover:text-white shadow-lg hover:shadow-xl hover:shadow-tech-lavender/25 transform hover:-translate-y-0.5 transition-all duration-200",
+          "border-2 border-minecraft-grass text-minecraft-grass hover:minecraft-gradient-grass hover:text-white shadow-lg hover:shadow-xl hover:shadow-green-500/40 transform hover:-translate-y-1 transition-all duration-200 minecraft-block",
         secondary:
-          "bg-tech-violet text-white hover:bg-tech-violet-dark shadow-lg hover:shadow-xl hover:shadow-tech-violet/25 transform hover:-translate-y-0.5 transition-all duration-200",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-tech-lavender underline-offset-4 hover:underline",
-        gold: "bg-tech-cyan text-white hover:bg-tech-indigo shadow-lg hover:shadow-xl hover:shadow-tech-cyan/25 transform hover:-translate-y-0.5 transition-all duration-200 font-bold",
+          "minecraft-gradient-cyan text-white hover:opacity-90 shadow-lg hover:shadow-xl hover:shadow-cyan-500/40 transform hover:-translate-y-1 transition-all duration-200 minecraft-block",
+        ghost: "hover:bg-accent hover:text-accent-foreground minecraft-block",
+        link: "text-minecraft-grass underline-offset-4 hover:underline",
+        gold: "minecraft-gradient-gold text-black hover:opacity-90 shadow-lg hover:shadow-xl hover:shadow-yellow-500/40 transform hover:-translate-y-1 transition-all duration-200 font-bold minecraft-block",
       },
       size: {
         default: "h-10 px-4 py-2",
