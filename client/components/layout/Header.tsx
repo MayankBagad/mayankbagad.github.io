@@ -18,15 +18,15 @@ export function Header() {
         <div className="flex items-center">
           <FluidGlass
             variant="subtle"
-            rounded="full"
+            rounded="sm"
             interactive
-            className="px-6 py-3 shadow-lg shadow-purple-500/10"
+            className="px-6 py-3 shadow-lg shadow-green-500/20 minecraft-block"
           >
             <div className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-8 h-8 bg-tech-lavender rounded-lg">
+              <div className="flex items-center justify-center w-8 h-8 minecraft-gradient-grass minecraft-block">
                 <Zap className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-tech-lavender">
+              <span className="text-xl font-bold text-minecraft-grass minecraft-font">
                 VoltSystems
               </span>
             </div>
@@ -37,35 +37,35 @@ export function Header() {
         <div className="hidden md:flex items-center">
           <FluidGlass
             variant="subtle"
-            rounded="full"
+            rounded="sm"
             interactive
-            className="px-6 py-3 shadow-lg shadow-violet-500/10"
+            className="px-6 py-3 shadow-lg shadow-cyan-500/20 minecraft-block"
           >
             <div className="flex items-center space-x-1">
               {/* Navigation Links */}
               <nav className="flex items-center space-x-6 mr-4">
                 <a
                   href="#features"
-                  className="text-sm font-medium hover:text-tech-lavender transition-colors px-3 py-2 rounded-lg hover:bg-white/5"
+                  className="text-lg font-semibold hover:text-minecraft-gold transition-colors px-3 py-2 rounded minecraft-block hover:bg-white/10 pixel-font"
                 >
                   Features
                 </a>
                 <a
                   href="#pricing"
-                  className="text-sm font-medium hover:text-tech-lavender transition-colors px-3 py-2 rounded-lg hover:bg-white/5"
+                  className="text-lg font-semibold hover:text-minecraft-gold transition-colors px-3 py-2 rounded minecraft-block hover:bg-white/10 pixel-font"
                 >
                   Pricing
                 </a>
                 <a
                   href="#support"
-                  className="text-sm font-medium hover:text-tech-lavender transition-colors px-3 py-2 rounded-lg hover:bg-white/5"
+                  className="text-lg font-semibold hover:text-minecraft-gold transition-colors px-3 py-2 rounded minecraft-block hover:bg-white/10 pixel-font"
                 >
                   Contact
                 </a>
               </nav>
 
               {/* Separator */}
-              <div className="w-px h-6 bg-white/15 mx-2"></div>
+              <div className="w-1 h-6 bg-white/20 mx-2 minecraft-block"></div>
 
               {/* Actions */}
               <div className="flex items-center ml-2">
@@ -79,15 +79,15 @@ export function Header() {
         <div className="flex md:hidden items-center">
           <FluidGlass
             variant="subtle"
-            rounded="full"
+            rounded="sm"
             interactive
-            className="px-4 py-3 shadow-lg shadow-purple-500/10"
+            className="px-4 py-3 shadow-lg shadow-green-500/20 minecraft-block"
           >
             <div className="flex items-center space-x-3">
               <ThemeToggle />
               <button
                 onClick={toggleMobileMenu}
-                className="p-2 hover:bg-white/10 rounded-lg transition-colors"
+                className="p-2 hover:bg-white/10 rounded minecraft-block transition-colors"
               >
                 {isMobileMenuOpen ? (
                   <X className="h-5 w-5" />
@@ -106,27 +106,27 @@ export function Header() {
           <div className="container px-4 mt-4">
             <FluidGlass
               variant="subtle"
-              rounded="xl"
-              className="p-6 shadow-lg shadow-violet-500/20"
+              rounded="lg"
+              className="p-6 shadow-lg shadow-cyan-500/30 minecraft-block"
             >
               <nav className="flex flex-col space-y-4">
                 <a
                   href="#features"
-                  className="text-sm font-medium hover:text-tech-lavender transition-colors py-2 px-3 rounded-lg hover:bg-white/5"
+                  className="text-lg font-semibold hover:text-minecraft-gold transition-colors py-2 px-3 rounded minecraft-block hover:bg-white/10 pixel-font"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Features
                 </a>
                 <a
                   href="#pricing"
-                  className="text-sm font-medium hover:text-tech-lavender transition-colors py-2 px-3 rounded-lg hover:bg-white/5"
+                  className="text-lg font-semibold hover:text-minecraft-gold transition-colors py-2 px-3 rounded minecraft-block hover:bg-white/10 pixel-font"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Pricing
                 </a>
                 <a
                   href="#support"
-                  className="text-sm font-medium hover:text-tech-lavender transition-colors py-2 px-3 rounded-lg hover:bg-white/5"
+                  className="text-lg font-semibold hover:text-minecraft-gold transition-colors py-2 px-3 rounded minecraft-block hover:bg-white/10 pixel-font"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Contact

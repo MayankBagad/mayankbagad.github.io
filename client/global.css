@@ -2,53 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Minecraft:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
 @layer base {
   /**
-   * VoltSystems Techy Lavender-Violet Theme
+   * VoltSystems Minecraft Color Palette
    * HSL format for Tailwind CSS compatibility
    */
   :root {
-    --background: 240 10% 4%; /* Deep dark with purple undertone */
-    --foreground: 260 15% 95%; /* Light lavender text */
+    --background: 0 0% 7%; /* Dark gray #121212 */
+    --foreground: 0 0% 95%; /* Light text */
 
-    --card: 240 12% 6%; /* Slightly lighter dark with purple */
-    --card-foreground: 260 15% 95%;
+    --card: 0 0% 10%; /* Slightly lighter dark gray */
+    --card-foreground: 0 0% 95%;
 
-    --popover: 240 12% 6%;
-    --popover-foreground: 260 15% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 260 80% 70%; /* Bright lavender */
-    --primary-foreground: 240 50% 10%;
+    --primary: 124 60% 32%; /* Grass green #2E7D32 */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 15% 12%;
-    --secondary-foreground: 260 20% 90%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 240 12% 8%;
-    --muted-foreground: 250 15% 65%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 280 90% 75%; /* Bright violet */
-    --accent-foreground: 240 50% 10%;
+    --accent: 197 100% 50%; /* Cyan #00B0FF */
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 15% 18%; /* Subtle purple borders */
-    --input: 240 15% 15%;
-    --ring: 260 80% 70%;
+    --border: 0 0% 20%; /* Dark gray borders */
+    --input: 0 0% 15%;
+    --ring: 124 60% 32%;
 
-    --radius: 12px;
+    --radius: 4px; /* Blocky Minecraft style */
 
-    /* Techy lavender-violet colors */
-    --tech-lavender: 260 80% 70%;
-    --tech-lavender-dark: 260 70% 60%;
-    --tech-violet: 280 90% 75%;
-    --tech-violet-dark: 280 80% 65%;
-    --tech-purple: 270 85% 68%;
-    --tech-indigo: 250 75% 65%;
-    --tech-cyan: 190 95% 75%;
-    --tech-pink: 320 85% 78%;
+    /* Minecraft-specific colors */
+    --minecraft-grass: 124 60% 32%; /* #2E7D32 */
+    --minecraft-grass-dark: 124 60% 22%;
+    --minecraft-gold: 48 98% 58%; /* #FBC02D */
+    --minecraft-gold-dark: 48 98% 48%;
+    --minecraft-cyan: 197 100% 50%; /* #00B0FF */
+    --minecraft-cyan-dark: 197 100% 40%;
+    --minecraft-dark-gray: 0 0% 7%; /* #121212 */
+    --minecraft-light-gray: 0 0% 20%;
 
     --sidebar-background: 220 15% 5%;
     --sidebar-foreground: 210 20% 90%;
@@ -61,43 +62,43 @@
   }
 
   .dark {
-    --background: 240 10% 4%;
-    --foreground: 260 15% 95%;
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
 
-    --card: 240 12% 6%;
-    --card-foreground: 260 15% 95%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 240 12% 6%;
-    --popover-foreground: 260 15% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 260 80% 75%;
-    --primary-foreground: 240 50% 10%;
+    --primary: 124 60% 32%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 15% 12%;
-    --secondary-foreground: 260 20% 90%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 240 12% 8%;
-    --muted-foreground: 250 15% 65%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 280 90% 80%;
-    --accent-foreground: 240 50% 10%;
+    --accent: 197 100% 50%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 15% 18%;
-    --input: 240 15% 15%;
-    --ring: 260 80% 75%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 124 60% 32%;
 
-    /* Dark mode techy colors */
-    --tech-lavender: 260 80% 75%;
-    --tech-lavender-dark: 260 70% 65%;
-    --tech-violet: 280 90% 80%;
-    --tech-violet-dark: 280 80% 70%;
-    --tech-purple: 270 85% 73%;
-    --tech-indigo: 250 75% 70%;
-    --tech-cyan: 190 95% 80%;
-    --tech-pink: 320 85% 83%;
+    /* Dark mode Minecraft colors */
+    --minecraft-grass: 124 60% 32%;
+    --minecraft-grass-dark: 124 60% 22%;
+    --minecraft-gold: 48 98% 58%;
+    --minecraft-gold-dark: 48 98% 48%;
+    --minecraft-cyan: 197 100% 50%;
+    --minecraft-cyan-dark: 197 100% 40%;
+    --minecraft-dark-gray: 0 0% 7%;
+    --minecraft-light-gray: 0 0% 20%;
 
     --sidebar-background: 220 15% 5%;
     --sidebar-foreground: 210 20% 90%;
@@ -117,15 +118,55 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family:
-      "Inter",
-      system-ui,
-      -apple-system,
-      sans-serif;
+    font-family: "Orbitron", "JetBrains Mono", monospace;
   }
 
   .minecraft-font {
-    font-family: "Minecraft", monospace;
+    font-family: "Orbitron", monospace;
+    font-weight: 600;
+  }
+
+  .pixel-font {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+  }
+
+  /* Light theme */
+  .light {
+    --background: 0 0% 95%; /* Light gray */
+    --foreground: 0 0% 10%; /* Dark text */
+
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 124 60% 32%; /* Grass green */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 85%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 197 100% 50%; /* Cyan */
+    --accent-foreground: 0 0% 100%;
+
+    --border: 0 0% 80%;
+    --input: 0 0% 85%;
+    --ring: 124 60% 32%;
+
+    /* Light mode Minecraft colors */
+    --minecraft-grass: 124 60% 32%;
+    --minecraft-grass-dark: 124 60% 22%;
+    --minecraft-gold: 48 98% 58%;
+    --minecraft-gold-dark: 48 98% 48%;
+    --minecraft-cyan: 197 100% 50%;
+    --minecraft-cyan-dark: 197 100% 40%;
+    --minecraft-dark-gray: 0 0% 20%;
+    --minecraft-light-gray: 0 0% 85%;
   }
 
   /* Apple-style liquid glass effect */
@@ -188,36 +229,64 @@
 }
 
 @layer utilities {
-  .text-tech-lavender {
-    color: hsl(var(--tech-lavender));
+  .text-minecraft-grass {
+    color: hsl(var(--minecraft-grass));
   }
 
-  .text-tech-violet {
-    color: hsl(var(--tech-violet));
+  .text-minecraft-gold {
+    color: hsl(var(--minecraft-gold));
   }
 
-  .text-tech-purple {
-    color: hsl(var(--tech-purple));
+  .text-minecraft-cyan {
+    color: hsl(var(--minecraft-cyan));
   }
 
-  .text-tech-cyan {
-    color: hsl(var(--tech-cyan));
+  .bg-minecraft-grass {
+    background-color: hsl(var(--minecraft-grass));
   }
 
-  .bg-tech-lavender {
-    background-color: hsl(var(--tech-lavender));
+  .bg-minecraft-gold {
+    background-color: hsl(var(--minecraft-gold));
   }
 
-  .bg-tech-violet {
-    background-color: hsl(var(--tech-violet));
+  .bg-minecraft-cyan {
+    background-color: hsl(var(--minecraft-cyan));
   }
 
-  .bg-tech-purple {
-    background-color: hsl(var(--tech-purple));
+  .border-minecraft-grass {
+    border-color: hsl(var(--minecraft-grass));
   }
 
-  .border-tech-lavender {
-    border-color: hsl(var(--tech-lavender));
+  /* Blocky Minecraft-style elements */
+  .minecraft-block {
+    border-radius: 4px;
+    box-shadow:
+      inset 2px 2px 0 rgba(255, 255, 255, 0.2),
+      inset -2px -2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .minecraft-gradient-grass {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--minecraft-grass)) 0%,
+      hsl(var(--minecraft-grass-dark)) 100%
+    );
+  }
+
+  .minecraft-gradient-gold {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--minecraft-gold)) 0%,
+      hsl(var(--minecraft-gold-dark)) 100%
+    );
+  }
+
+  .minecraft-gradient-cyan {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--minecraft-cyan)) 0%,
+      hsl(var(--minecraft-cyan-dark)) 100%
+    );
   }
 
   /* Glass morphism utilities */
