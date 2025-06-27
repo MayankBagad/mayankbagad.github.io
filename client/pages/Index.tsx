@@ -33,13 +33,13 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="py-20 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-minecraft-green/10 via-background to-minecraft-blue/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-tech-lavender/10 via-background to-tech-violet/10"></div>
         <div className="container relative">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge className="mb-4 bg-minecraft-green/10 text-minecraft-green border-minecraft-green/20">
+            <Badge className="mb-4 bg-tech-lavender/10 text-tech-lavender border-tech-lavender/20">
               ⚡ Lightning Fast Servers
             </Badge>
-            <h1 className="text-4xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-minecraft-green to-minecraft-blue bg-clip-text text-transparent">
+            <h1 className="text-4xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-tech-lavender to-tech-violet bg-clip-text text-transparent">
               Premium Minecraft
               <br />
               Server Hosting
@@ -50,14 +50,17 @@ export default function Index() {
               gaming experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <MinecraftButton size="lg" className="text-lg px-8">
+              <MinecraftButton
+                size="lg"
+                className="text-lg px-8 bg-tech-lavender hover:bg-tech-lavender-dark"
+              >
                 <Play className="mr-2 h-5 w-5" />
                 Start Your Server
               </MinecraftButton>
               <MinecraftButton
                 variant="outline"
                 size="lg"
-                className="text-lg px-8"
+                className="text-lg px-8 border-tech-lavender text-tech-lavender hover:bg-tech-lavender hover:text-white"
               >
                 <Globe className="mr-2 h-5 w-5" />
                 View Plans
@@ -75,13 +78,13 @@ export default function Index() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-minecraft-green mb-2">
+              <div className="text-3xl font-bold text-tech-lavender mb-2">
                 99.9%
               </div>
               <div className="text-sm text-muted-foreground">Uptime</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-minecraft-blue mb-2">
+              <div className="text-3xl font-bold text-tech-violet mb-2">
                 300+
               </div>
               <div className="text-sm text-muted-foreground">
@@ -89,9 +92,7 @@ export default function Index() {
               </div>
             </div>
             <div className="text-center flex flex-col">
-              <div className="text-3xl font-bold text-minecraft-gold mb-2">
-                24/7
-              </div>
+              <div className="text-3xl font-bold text-tech-cyan mb-2">24/7</div>
               <div className="text-sm text-muted-foreground">Support</div>
             </div>
           </div>
@@ -103,8 +104,8 @@ export default function Index() {
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-              Why Choose{" "}
-              <span className="text-minecraft-green">VoltSystems</span>?
+              Why Choose <span className="text-tech-lavender">VoltSystems</span>
+              ?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Built for gamers, by gamers. Experience the difference with our
@@ -113,10 +114,10 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-lavender/20">
               <CardHeader>
-                <div className="w-12 h-12 bg-minecraft-green/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Zap className="h-6 w-6 text-minecraft-green" />
+                <div className="w-12 h-12 bg-tech-lavender/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Zap className="h-6 w-6 text-tech-lavender" />
                 </div>
                 <CardTitle>Lightning Performance</CardTitle>
                 <CardDescription>
@@ -126,10 +127,10 @@ export default function Index() {
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-violet/20">
               <CardHeader>
-                <div className="w-12 h-12 bg-minecraft-blue/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Shield className="h-6 w-6 text-minecraft-blue" />
+                <div className="w-12 h-12 bg-tech-violet/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Shield className="h-6 w-6 text-tech-violet" />
                 </div>
                 <CardTitle>DDoS Protection</CardTitle>
                 <CardDescription>
@@ -139,10 +140,10 @@ export default function Index() {
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-cyan/20">
               <CardHeader>
-                <div className="w-12 h-12 bg-minecraft-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Clock className="h-6 w-6 text-minecraft-gold" />
+                <div className="w-12 h-12 bg-tech-cyan/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Clock className="h-6 w-6 text-tech-cyan" />
                 </div>
                 <CardTitle>Instant Setup</CardTitle>
                 <CardDescription>
@@ -152,10 +153,10 @@ export default function Index() {
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-purple/20">
               <CardHeader>
-                <div className="w-12 h-12 bg-minecraft-green/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Users className="h-6 w-6 text-minecraft-green" />
+                <div className="w-12 h-12 bg-tech-purple/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Users className="h-6 w-6 text-tech-purple" />
                 </div>
                 <CardTitle>24/7 Expert Support</CardTitle>
                 <CardDescription>
@@ -165,10 +166,10 @@ export default function Index() {
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-indigo/20">
               <CardHeader>
-                <div className="w-12 h-12 bg-minecraft-blue/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Download className="h-6 w-6 text-minecraft-blue" />
+                <div className="w-12 h-12 bg-tech-indigo/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Download className="h-6 w-6 text-tech-indigo" />
                 </div>
                 <CardTitle>One-Click Modpacks</CardTitle>
                 <CardDescription>
@@ -178,10 +179,10 @@ export default function Index() {
               </CardHeader>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-tech-pink/20">
               <CardHeader>
-                <div className="w-12 h-12 bg-minecraft-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <HardDrive className="h-6 w-6 text-minecraft-gold" />
+                <div className="w-12 h-12 bg-tech-pink/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <HardDrive className="h-6 w-6 text-tech-pink" />
                 </div>
                 <CardTitle>Automatic Backups</CardTitle>
                 <CardDescription>
@@ -199,7 +200,7 @@ export default function Index() {
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-              Simple, <span className="text-minecraft-green">Fair</span> Pricing
+              Simple, <span className="text-tech-lavender">Fair</span> Pricing
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Start small and scale up as your community grows. No hidden fees,
@@ -221,23 +222,23 @@ export default function Index() {
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">2GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">Up to 10 players</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">25GB SSD storage</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">Free subdomain</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">24/7 support</span>
                   </div>
                 </div>
@@ -248,9 +249,9 @@ export default function Index() {
             </Card>
 
             {/* Pro Plan */}
-            <Card className="relative border-minecraft-green shadow-lg scale-105">
+            <Card className="relative border-tech-lavender shadow-lg scale-105 shadow-tech-lavender/20">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-minecraft-green text-white">
+                <Badge className="bg-tech-lavender text-white">
                   Most Popular
                 </Badge>
               </div>
