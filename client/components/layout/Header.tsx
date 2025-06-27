@@ -56,13 +56,6 @@ export function Header() {
             {/* Actions */}
             <div className="flex items-center space-x-3 ml-2">
               <ThemeToggle />
-              <MinecraftButton
-                variant="outline"
-                size="sm"
-                className="h-8 px-4 text-xs"
-              >
-                Login
-              </MinecraftButton>
               <MinecraftButton size="sm" className="h-8 px-4 text-xs">
                 Get Started
               </MinecraftButton>
@@ -117,9 +110,6 @@ export function Header() {
                 </a>
               </nav>
               <div className="border-t border-white/10 pt-4 flex flex-col space-y-3">
-                <MinecraftButton variant="outline" size="sm">
-                  Login
-                </MinecraftButton>
                 <MinecraftButton size="sm">Get Started</MinecraftButton>
               </div>
             </div>
