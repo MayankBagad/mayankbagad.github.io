@@ -1,4 +1,4 @@
-import { Zap, Github, Twitter, Discord } from "lucide-react";
+import { Zap, Github, Twitter, MessageCircle } from "lucide-react";
 
 export function Footer() {
   return (
@@ -25,7 +25,7 @@ export function Footer() {
                 className="text-muted-foreground hover:text-minecraft-green transition-colors"
                 aria-label="Discord"
               >
-                <Discord className="h-5 w-5" />
+                <MessageCircle className="h-5 w-5" />
               </a>
               <a
                 href="#"
