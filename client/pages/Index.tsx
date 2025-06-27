@@ -61,6 +61,12 @@ export default function Index() {
                 variant="outline"
                 size="lg"
                 className="text-lg px-8 border-minecraft-cyan text-minecraft-cyan hover:bg-minecraft-cyan hover:text-white minecraft-block minecraft-font"
+                onClick={() => {
+                  document.getElementById("pricing")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
               >
                 <Globe className="mr-2 h-5 w-5" />
                 View Plans
@@ -73,8 +79,8 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-muted/50">
+      {/* Features Section */}
+      <section id="features" className="py-20 ml-auto">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center max-w-3xl mx-auto">
             <div className="text-center">
@@ -380,7 +386,7 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-minecraft-grass/10">
+      <section id="support" className="py-20 bg-minecraft-grass/10">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6 minecraft-font">
