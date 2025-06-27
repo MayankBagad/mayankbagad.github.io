@@ -9,16 +9,16 @@ const minecraftButtonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-minecraft-green text-white hover:bg-minecraft-dark-green shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200",
+          "bg-tech-lavender text-white hover:bg-tech-lavender-dark shadow-lg hover:shadow-xl hover:shadow-tech-lavender/25 transform hover:-translate-y-0.5 transition-all duration-200",
         destructive:
-          "bg-minecraft-redstone text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200",
+          "bg-red-500 text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200",
         outline:
-          "border-2 border-minecraft-green text-minecraft-green hover:bg-minecraft-green hover:text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200",
+          "border-2 border-tech-lavender text-tech-lavender hover:bg-tech-lavender hover:text-white shadow-lg hover:shadow-xl hover:shadow-tech-lavender/25 transform hover:-translate-y-0.5 transition-all duration-200",
         secondary:
-          "bg-minecraft-blue text-white hover:bg-minecraft-dark-blue shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200",
+          "bg-tech-violet text-white hover:bg-tech-violet-dark shadow-lg hover:shadow-xl hover:shadow-tech-violet/25 transform hover:-translate-y-0.5 transition-all duration-200",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-minecraft-green underline-offset-4 hover:underline",
-        gold: "bg-minecraft-gold text-black hover:opacity-90 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 font-bold",
+        link: "text-tech-lavender underline-offset-4 hover:underline",
+        gold: "bg-tech-cyan text-white hover:bg-tech-indigo shadow-lg hover:shadow-xl hover:shadow-tech-cyan/25 transform hover:-translate-y-0.5 transition-all duration-200 font-bold",
       },
       size: {
         default: "h-10 px-4 py-2",

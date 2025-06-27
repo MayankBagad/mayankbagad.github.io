@@ -410,7 +410,7 @@ export default function Index() {
                   from vanilla to a full modded experience in minutes!"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-minecraft-blue rounded-full flex items-center justify-center text-white text-xs font-bold">
+                  <div className="w-8 h-8 bg-tech-violet rounded-full flex items-center justify-center text-white text-xs font-bold">
                     A
                   </div>
                   <div>
@@ -438,7 +438,7 @@ export default function Index() {
                   support was there within minutes. Incredible!"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-minecraft-green rounded-full flex items-center justify-center text-white text-xs font-bold">
+                  <div className="w-8 h-8 bg-tech-purple rounded-full flex items-center justify-center text-white text-xs font-bold">
                     E
                   </div>
                   <div>
@@ -455,26 +455,29 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-minecraft-green/5">
+      <section className="py-20 bg-tech-lavender/5">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">
               Ready to Power Up Your{" "}
-              <span className="text-minecraft-green">Minecraft World</span>?
+              <span className="text-tech-lavender">Minecraft World</span>?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
               Join thousands of server owners who chose VoltSystems for
               reliable, high-performance Minecraft hosting.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <MinecraftButton size="lg" className="text-lg px-8">
+              <MinecraftButton
+                size="lg"
+                className="text-lg px-8 bg-tech-lavender hover:bg-tech-lavender-dark"
+              >
                 <Zap className="mr-2 h-5 w-5" />
                 Start Your Free Trial
               </MinecraftButton>
               <MinecraftButton
                 variant="outline"
                 size="lg"
-                className="text-lg px-8"
+                className="text-lg px-8 border-tech-lavender text-tech-lavender hover:bg-tech-lavender hover:text-white"
               >
                 <Users className="mr-2 h-5 w-5" />
                 Talk to Sales
