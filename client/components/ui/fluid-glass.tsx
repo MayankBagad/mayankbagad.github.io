@@ -17,9 +17,9 @@ const FluidGlass: React.FC<FluidGlassProps> = ({
   rounded = "lg",
 }) => {
   const variants = {
-    default: "bg-black/50 border-white/15",
-    intense: "bg-black/70 border-white/25",
-    subtle: "bg-black/30 border-white/10",
+    default: "bg-black/20 border-white/8",
+    intense: "bg-black/25 border-white/12",
+    subtle: "bg-black/15 border-white/6",
   };
 
   const roundedClasses = {

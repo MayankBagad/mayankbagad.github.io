@@ -6,49 +6,49 @@
 
 @layer base {
   /**
-   * VoltSystems Black Theme with Minecraft elements
+   * VoltSystems Techy Lavender-Violet Theme
    * HSL format for Tailwind CSS compatibility
    */
   :root {
-    --background: 220 15% 4%; /* Deep black */
-    --foreground: 210 20% 95%; /* Light text */
+    --background: 240 10% 4%; /* Deep dark with purple undertone */
+    --foreground: 260 15% 95%; /* Light lavender text */
 
-    --card: 220 15% 6%; /* Slightly lighter black for cards */
-    --card-foreground: 210 20% 95%;
+    --card: 240 12% 6%; /* Slightly lighter dark with purple */
+    --card-foreground: 260 15% 95%;
 
-    --popover: 220 15% 6%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 240 12% 6%;
+    --popover-foreground: 260 15% 95%;
 
-    --primary: 135 75% 55%; /* Bright Minecraft green */
-    --primary-foreground: 0 0% 0%;
+    --primary: 260 80% 70%; /* Bright lavender */
+    --primary-foreground: 240 50% 10%;
 
-    --secondary: 220 15% 10%;
-    --secondary-foreground: 210 20% 90%;
+    --secondary: 240 15% 12%;
+    --secondary-foreground: 260 20% 90%;
 
-    --muted: 220 15% 8%;
-    --muted-foreground: 210 15% 60%;
+    --muted: 240 12% 8%;
+    --muted-foreground: 250 15% 65%;
 
-    --accent: 200 100% 60%; /* Bright Minecraft blue */
-    --accent-foreground: 0 0% 0%;
+    --accent: 280 90% 75%; /* Bright violet */
+    --accent-foreground: 240 50% 10%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 15%; /* Subtle borders */
-    --input: 220 15% 12%;
-    --ring: 135 75% 55%;
+    --border: 240 15% 18%; /* Subtle purple borders */
+    --input: 240 15% 15%;
+    --ring: 260 80% 70%;
 
-    --radius: 12px; /* More rounded for modern feel */
+    --radius: 12px;
 
-    /* Minecraft-specific colors */
-    --minecraft-green: 135 75% 55%;
-    --minecraft-dark-green: 135 75% 45%;
-    --minecraft-blue: 200 100% 60%;
-    --minecraft-dark-blue: 200 100% 50%;
-    --minecraft-stone: 220 10% 25%;
-    --minecraft-dark-stone: 220 15% 15%;
-    --minecraft-gold: 45 100% 60%;
-    --minecraft-redstone: 0 100% 60%;
+    /* Techy lavender-violet colors */
+    --tech-lavender: 260 80% 70%;
+    --tech-lavender-dark: 260 70% 60%;
+    --tech-violet: 280 90% 75%;
+    --tech-violet-dark: 280 80% 65%;
+    --tech-purple: 270 85% 68%;
+    --tech-indigo: 250 75% 65%;
+    --tech-cyan: 190 95% 75%;
+    --tech-pink: 320 85% 78%;
 
     --sidebar-background: 220 15% 5%;
     --sidebar-foreground: 210 20% 90%;
@@ -61,43 +61,43 @@
   }
 
   .dark {
-    --background: 220 15% 4%;
-    --foreground: 210 20% 95%;
+    --background: 240 10% 4%;
+    --foreground: 260 15% 95%;
 
-    --card: 220 15% 6%;
-    --card-foreground: 210 20% 95%;
+    --card: 240 12% 6%;
+    --card-foreground: 260 15% 95%;
 
-    --popover: 220 15% 6%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 240 12% 6%;
+    --popover-foreground: 260 15% 95%;
 
-    --primary: 135 75% 55%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 260 80% 75%;
+    --primary-foreground: 240 50% 10%;
 
-    --secondary: 220 15% 10%;
-    --secondary-foreground: 210 20% 90%;
+    --secondary: 240 15% 12%;
+    --secondary-foreground: 260 20% 90%;
 
-    --muted: 220 15% 8%;
-    --muted-foreground: 210 15% 60%;
+    --muted: 240 12% 8%;
+    --muted-foreground: 250 15% 65%;
 
-    --accent: 200 100% 60%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 280 90% 80%;
+    --accent-foreground: 240 50% 10%;
 
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 15%;
-    --input: 220 15% 12%;
-    --ring: 135 75% 55%;
+    --border: 240 15% 18%;
+    --input: 240 15% 15%;
+    --ring: 260 80% 75%;
 
-    /* Dark mode Minecraft colors */
-    --minecraft-green: 135 75% 55%;
-    --minecraft-dark-green: 135 75% 45%;
-    --minecraft-blue: 200 100% 60%;
-    --minecraft-dark-blue: 200 100% 50%;
-    --minecraft-stone: 220 10% 25%;
-    --minecraft-dark-stone: 220 15% 15%;
-    --minecraft-gold: 45 100% 60%;
-    --minecraft-redstone: 0 100% 60%;
+    /* Dark mode techy colors */
+    --tech-lavender: 260 80% 75%;
+    --tech-lavender-dark: 260 70% 65%;
+    --tech-violet: 280 90% 80%;
+    --tech-violet-dark: 280 80% 70%;
+    --tech-purple: 270 85% 73%;
+    --tech-indigo: 250 75% 70%;
+    --tech-cyan: 190 95% 80%;
+    --tech-pink: 320 85% 83%;
 
     --sidebar-background: 220 15% 5%;
     --sidebar-foreground: 210 20% 90%;
@@ -188,32 +188,36 @@
 }
 
 @layer utilities {
-  .text-minecraft-green {
-    color: hsl(var(--minecraft-green));
+  .text-tech-lavender {
+    color: hsl(var(--tech-lavender));
   }
 
-  .text-minecraft-blue {
-    color: hsl(var(--minecraft-blue));
+  .text-tech-violet {
+    color: hsl(var(--tech-violet));
   }
 
-  .text-minecraft-gold {
-    color: hsl(var(--minecraft-gold));
+  .text-tech-purple {
+    color: hsl(var(--tech-purple));
   }
 
-  .bg-minecraft-green {
-    background-color: hsl(var(--minecraft-green));
+  .text-tech-cyan {
+    color: hsl(var(--tech-cyan));
   }
 
-  .bg-minecraft-blue {
-    background-color: hsl(var(--minecraft-blue));
+  .bg-tech-lavender {
+    background-color: hsl(var(--tech-lavender));
   }
 
-  .bg-minecraft-stone {
-    background-color: hsl(var(--minecraft-stone));
+  .bg-tech-violet {
+    background-color: hsl(var(--tech-violet));
   }
 
-  .border-minecraft-green {
-    border-color: hsl(var(--minecraft-green));
+  .bg-tech-purple {
+    background-color: hsl(var(--tech-purple));
+  }
+
+  .border-tech-lavender {
+    border-color: hsl(var(--tech-lavender));
   }
 
   /* Glass morphism utilities */

@@ -12,21 +12,21 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full py-4">
+    <header className="sticky top-0 z-50 w-full py-6">
       <div className="container flex h-16 items-center justify-between">
         {/* Left Glass Container - Logo */}
         <div className="flex items-center">
           <FluidGlass
-            variant="intense"
+            variant="subtle"
             rounded="full"
             interactive
-            className="px-6 py-3"
+            className="px-6 py-3 shadow-lg shadow-purple-500/10"
           >
             <div className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-8 h-8 bg-minecraft-green rounded-lg">
+              <div className="flex items-center justify-center w-8 h-8 bg-tech-lavender rounded-lg">
                 <Zap className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-minecraft-green">
+              <span className="text-xl font-bold text-tech-lavender">
                 VoltSystems
               </span>
             </div>
@@ -36,43 +36,40 @@ export function Header() {
         {/* Right Glass Container - Navigation & Actions */}
         <div className="hidden md:flex items-center">
           <FluidGlass
-            variant="intense"
+            variant="subtle"
             rounded="full"
             interactive
-            className="px-6 py-3"
+            className="px-6 py-3 shadow-lg shadow-violet-500/10"
           >
             <div className="flex items-center space-x-1">
               {/* Navigation Links */}
-              <nav className="flex items-center space-x-6 mr-6">
+              <nav className="flex items-center space-x-6 mr-4">
                 <a
                   href="#features"
-                  className="text-sm font-medium hover:text-minecraft-green transition-colors px-3 py-2 rounded-lg hover:bg-white/5"
+                  className="text-sm font-medium hover:text-tech-lavender transition-colors px-3 py-2 rounded-lg hover:bg-white/5"
                 >
                   Features
                 </a>
                 <a
                   href="#pricing"
-                  className="text-sm font-medium hover:text-minecraft-green transition-colors px-3 py-2 rounded-lg hover:bg-white/5"
+                  className="text-sm font-medium hover:text-tech-lavender transition-colors px-3 py-2 rounded-lg hover:bg-white/5"
                 >
                   Pricing
                 </a>
                 <a
                   href="#support"
-                  className="text-sm font-medium hover:text-minecraft-green transition-colors px-3 py-2 rounded-lg hover:bg-white/5"
+                  className="text-sm font-medium hover:text-tech-lavender transition-colors px-3 py-2 rounded-lg hover:bg-white/5"
                 >
                   Contact
                 </a>
               </nav>
 
               {/* Separator */}
-              <div className="w-px h-6 bg-white/20 mx-2"></div>
+              <div className="w-px h-6 bg-white/15 mx-2"></div>
 
               {/* Actions */}
-              <div className="flex items-center space-x-3 ml-2">
+              <div className="flex items-center ml-2">
                 <ThemeToggle />
-                <MinecraftButton size="sm" className="h-8 px-4 text-xs">
-                  Get Started
-                </MinecraftButton>
               </div>
             </div>
           </FluidGlass>
@@ -81,10 +78,10 @@ export function Header() {
         {/* Mobile Menu Button */}
         <div className="flex md:hidden items-center">
           <FluidGlass
-            variant="intense"
+            variant="subtle"
             rounded="full"
             interactive
-            className="px-4 py-3"
+            className="px-4 py-3 shadow-lg shadow-purple-500/10"
           >
             <div className="flex items-center space-x-3">
               <ThemeToggle />
@@ -108,36 +105,33 @@ export function Header() {
         <div className="md:hidden">
           <div className="container px-4 mt-4">
             <FluidGlass
-              variant="intense"
+              variant="subtle"
               rounded="xl"
-              className="p-6 space-y-6"
+              className="p-6 shadow-lg shadow-violet-500/20"
             >
               <nav className="flex flex-col space-y-4">
                 <a
                   href="#features"
-                  className="text-sm font-medium hover:text-minecraft-green transition-colors py-2 px-3 rounded-lg hover:bg-white/5"
+                  className="text-sm font-medium hover:text-tech-lavender transition-colors py-2 px-3 rounded-lg hover:bg-white/5"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Features
                 </a>
                 <a
                   href="#pricing"
-                  className="text-sm font-medium hover:text-minecraft-green transition-colors py-2 px-3 rounded-lg hover:bg-white/5"
+                  className="text-sm font-medium hover:text-tech-lavender transition-colors py-2 px-3 rounded-lg hover:bg-white/5"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Pricing
                 </a>
                 <a
                   href="#support"
-                  className="text-sm font-medium hover:text-minecraft-green transition-colors py-2 px-3 rounded-lg hover:bg-white/5"
+                  className="text-sm font-medium hover:text-tech-lavender transition-colors py-2 px-3 rounded-lg hover:bg-white/5"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Contact
                 </a>
               </nav>
-              <div className="border-t border-white/10 pt-4 flex flex-col space-y-3">
-                <MinecraftButton size="sm">Get Started</MinecraftButton>
-              </div>
             </FluidGlass>
           </div>
         </div>
