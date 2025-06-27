@@ -282,28 +282,32 @@ export default function Index() {
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">6GB RAM</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">6GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">Up to 40 players</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">Up to 40 players</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">100GB SSD storage</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">
+                      100GB SSD storage
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">Custom domain support</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">
+                      Custom domain support
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">Priority support</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">Priority support</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">Plugin manager</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">Plugin manager</span>
                   </div>
                 </div>
                 <MinecraftButton className="w-full">
@@ -325,28 +329,34 @@ export default function Index() {
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">16GB RAM</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">16GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">Unlimited players</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">
+                      Unlimited players
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">500GB SSD storage</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">
+                      500GB SSD storage
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">Dedicated IP</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">Dedicated IP</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">White-glove setup</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">
+                      White-glove setup
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-tech-lavender" />
-                    <span className="text-sm">Custom modpacks</span>
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">Custom modpacks</span>
                   </div>
                 </div>
                 <MinecraftButton className="w-full" variant="outline">
