@@ -15,7 +15,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         {/* Left Glass Container - Logo */}
         <div className="flex items-center">
-          <div className="flex items-center space-x-3 px-6 py-3 backdrop-blur-xl bg-black/30 border border-white/10 rounded-full shadow-lg">
+          <div className="flex items-center space-x-3 px-6 py-3 backdrop-blur-xl bg-black/60 border border-white/20 rounded-full shadow-lg">
             <div className="flex items-center justify-center w-8 h-8 bg-minecraft-green rounded-lg">
               <Zap className="h-5 w-5 text-white" />
             </div>
@@ -27,7 +27,7 @@ export function Header() {
 
         {/* Right Glass Container - Navigation & Actions */}
         <div className="hidden md:flex items-center">
-          <div className="flex items-center space-x-1 px-6 py-3 backdrop-blur-xl bg-black/30 border border-white/10 rounded-full shadow-lg">
+          <div className="flex items-center space-x-1 px-6 py-3 backdrop-blur-xl bg-black/60 border border-white/20 rounded-full shadow-lg">
             {/* Navigation Links */}
             <nav className="flex items-center space-x-6 mr-6">
               <a
@@ -65,7 +65,7 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <div className="flex md:hidden items-center">
-          <div className="flex items-center space-x-3 px-4 py-3 backdrop-blur-xl bg-black/30 border border-white/10 rounded-full shadow-lg">
+          <div className="flex items-center space-x-3 px-4 py-3 backdrop-blur-xl bg-black/60 border border-white/20 rounded-full shadow-lg">
             <ThemeToggle />
             <button
               onClick={toggleMobileMenu}
@@ -85,7 +85,7 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden">
           <div className="container px-4 mt-4">
-            <div className="backdrop-blur-xl bg-black/30 border border-white/10 rounded-2xl shadow-lg p-6 space-y-6">
+            <div className="backdrop-blur-xl bg-black/60 border border-white/20 rounded-2xl shadow-lg p-6 space-y-6">
               <nav className="flex flex-col space-y-4">
                 <a
                   href="#features"
