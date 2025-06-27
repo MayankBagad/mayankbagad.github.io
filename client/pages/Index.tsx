@@ -266,27 +266,27 @@ export default function Index() {
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">6GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">Up to 40 players</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">100GB SSD storage</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">Custom domain support</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">Priority support</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">Plugin manager</span>
                   </div>
                 </div>
@@ -309,27 +309,27 @@ export default function Index() {
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">16GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">Unlimited players</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">500GB SSD storage</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">Dedicated IP</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">White-glove setup</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-green" />
+                    <Check className="h-4 w-4 text-tech-lavender" />
                     <span className="text-sm">Custom modpacks</span>
                   </div>
                 </div>
@@ -358,7 +358,7 @@ export default function Index() {
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-              Loved by <span className="text-minecraft-green">Gamers</span>
+              Loved by <span className="text-tech-lavender">Gamers</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Join thousands of satisfied server owners who trust VoltSystems
@@ -372,7 +372,7 @@ export default function Index() {
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      className="h-4 w-4 fill-minecraft-gold text-minecraft-gold"
+                      className="h-4 w-4 fill-tech-cyan text-tech-cyan"
                     />
                   ))}
                 </div>
@@ -382,7 +382,7 @@ export default function Index() {
                   support!"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-minecraft-green rounded-full flex items-center justify-center text-white text-xs font-bold">
+                  <div className="w-8 h-8 bg-tech-lavender rounded-full flex items-center justify-center text-white text-xs font-bold">
                     S
                   </div>
                   <div>
