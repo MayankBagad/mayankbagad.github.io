@@ -1,4 +1,4 @@
-import { Zap, MessageCircle, Mail } from "lucide-react";
+import { Zap, MessageCircle, Mail, Activity } from "lucide-react";
 
 export function Footer() {
   return (
