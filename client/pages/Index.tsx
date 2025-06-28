@@ -37,11 +37,13 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-br from-minecraft-grass/20 via-background to-minecraft-cyan/15"></div>
         <div className="container relative">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge className="mb-4 minecraft-gradient-grass text-white border-minecraft-grass/30 minecraft-block pixel-font flex items-center gap-2">
-              <span className="text-lg">🇮🇳</span>
-              India-Based Servers
-            </Badge>
-            <h1 className="text-4xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-minecraft-grass to-minecraft-cyan bg-clip-text text-transparent premium-heading">
+            <div className="flex justify-center mb-4">
+              <Badge className="minecraft-gradient-grass text-white border-minecraft-grass/30 minecraft-block pixel-font inline-flex items-center gap-2 px-4 py-2">
+                <span className="text-lg">🇮🇳</span>
+                India-Based Servers
+              </Badge>
+            </div>
+            <h1 className="text-4xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-minecraft-grass via-minecraft-gold to-minecraft-cyan bg-clip-text text-transparent premium-heading premium-text-gradient">
               Premium Minecraft
               <br />
               Server Hosting
