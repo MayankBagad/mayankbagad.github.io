@@ -127,6 +127,7 @@ export default {
         pixel: ["JetBrains Mono", "monospace"],
         premium: ["Sora", "DM Serif Display", "Playfair Display", "serif"],
         general: ["General Sans", "sans-serif"],
+        manrope: ["Manrope", "Segoe UI", "sans-serif"],
       },
     },
   },

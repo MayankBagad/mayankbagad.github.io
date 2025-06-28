@@ -20,21 +20,33 @@ export function Footer() {
               and 24/7 support.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="https://discord.gg/EpadyruXns"
-                target="_blank"
-                className="text-muted-foreground hover:text-minecraft-cyan transition-colors cursor-pointer"
-                aria-label="Discord Server"
-              >
-                <MessageCircle className="h-5 w-5" />
-              </a>
-              <a
-                href="mailto:minetown456@gmail.com"
-                className="text-muted-foreground hover:text-minecraft-cyan transition-colors"
-                aria-label="Email Support"
-              >
-                <Mail className="h-5 w-5" />
-              </a>
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://discord.gg/EpadyruXns"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-minecraft-cyan transition-colors cursor-pointer"
+                  aria-label="Discord Server"
+                >
+                  <MessageCircle className="h-5 w-5" />
+                </a>
+                <div
+                  className="w-2 h-2 bg-green-500 rounded-full animate-pulse"
+                  title="Online"
+                ></div>
+              </div>
+              <div className="flex items-center gap-2">
+                <a
+                  href="mailto:minetown456@gmail.com"
+                  className="text-muted-foreground hover:text-minecraft-cyan transition-colors"
+                  aria-label="Email Support"
+                >
+                  <Mail className="h-5 w-5" />
+                </a>
+                <div
+                  className="w-2 h-2 bg-green-500 rounded-full animate-pulse"
+                  title="Available"
+                ></div>
+              </div>
             </div>
           </div>
 
@@ -104,9 +116,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>
-            &copy; {new Date().getFullYear()} VoltSystems. All rights reserved.
-          </p>
+          <p>Made with 💖 by Volt</p>
         </div>
       </div>
     </footer>

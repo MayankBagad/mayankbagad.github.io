@@ -25,17 +25,11 @@ import {
   Download,
   Globe,
 } from "lucide-react";
+import { AnimatedCounter } from "@/components/ui/animated-counter";
 
 export default function Index() {
   return (
     <div className="min-h-screen flex flex-col relative">
-      {/* Floating Minecraft Pickaxe */}
-      <div className="fixed bottom-5 right-5 z-40 minecraft-float">
-        <div className="w-16 h-16 bg-minecraft-gold rounded-lg flex items-center justify-center shadow-lg shadow-minecraft-gold/30">
-          <span className="text-2xl">⛏️</span>
-        </div>
-      </div>
-
       <Header />
 
       {/* Hero Section */}
@@ -43,8 +37,9 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-br from-minecraft-grass/20 via-background to-minecraft-cyan/15"></div>
         <div className="container relative">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge className="mb-4 minecraft-gradient-grass text-white border-minecraft-grass/30 minecraft-block pixel-font">
-              🇮🇳 India-Based Servers
+            <Badge className="mb-4 minecraft-gradient-grass text-white border-minecraft-grass/30 minecraft-block pixel-font flex items-center gap-2">
+              <span className="text-lg">🇮🇳</span>
+              India-Based Servers
             </Badge>
             <h1 className="text-4xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-minecraft-grass to-minecraft-cyan bg-clip-text text-transparent premium-heading">
               Premium Minecraft
@@ -60,23 +55,15 @@ export default function Index() {
               <MinecraftButton
                 size="lg"
                 className="text-lg px-8 minecraft-gradient-grass minecraft-block minecraft-font glow-green-hover minecraft-button-enhanced border border-transparent"
+                onClick={() =>
+                  window.open(
+                    "https://discordapp.com/users/388343727745400834",
+                    "_blank",
+                  )
+                }
               >
-                <Play className="mr-2 h-5 w-5" />
-                Start Your Server
-              </MinecraftButton>
-              <MinecraftButton
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 border-minecraft-cyan text-minecraft-cyan hover:bg-minecraft-cyan hover:text-white minecraft-block minecraft-font glow-blue-hover minecraft-button-enhanced"
-                onClick={() => {
-                  document.getElementById("pricing")?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                  });
-                }}
-              >
-                <Globe className="mr-2 h-5 w-5" />
-                View Plans
+                <Zap className="mr-2 h-5 w-5" />
+                Start Your Free Trial
               </MinecraftButton>
             </div>
             <p className="text-sm text-muted-foreground mt-4 pixel-font">
@@ -87,21 +74,27 @@ export default function Index() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-muted/50">
+      <section className="py-16">
         <div className="minecraft-centered-container">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-12 sm:gap-16 lg:gap-20 w-full">
             <div className="text-center">
-              <div className="text-3xl font-bold text-minecraft-grass mb-2 minecraft-font">
-                99.9%
-              </div>
+              <AnimatedCounter
+                end={99.9}
+                suffix="%"
+                className="text-3xl font-bold text-minecraft-grass mb-2 minecraft-font"
+                duration={2500}
+              />
               <div className="text-sm text-muted-foreground pixel-font">
                 Uptime
               </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-minecraft-cyan mb-2 minecraft-font">
-                300+
-              </div>
+              <AnimatedCounter
+                end={300}
+                suffix="+"
+                className="text-3xl font-bold text-minecraft-cyan mb-2 minecraft-font"
+                duration={2000}
+              />
               <div className="text-sm text-muted-foreground pixel-font">
                 Active Players
               </div>
@@ -225,7 +218,7 @@ export default function Index() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 bg-muted/50">
+      <section id="pricing" className="py-20">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4 minecraft-font">
@@ -238,11 +231,11 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-            {/* Pebble Core */}
-            <Card className="relative minecraft-block">
+            {/* Starter */}
+            <Card className="relative minecraft-block hover:border-white transition-all duration-300">
               <CardHeader className="text-center">
                 <CardTitle className="text-xl minecraft-font">
-                  Pebble Core
+                  Starter
                 </CardTitle>
                 <CardDescription className="pixel-font">
                   Perfect for small groups
@@ -279,12 +272,10 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            {/* Slate Node */}
-            <Card className="relative minecraft-block">
+            {/* Pro */}
+            <Card className="relative minecraft-block hover:border-white transition-all duration-300">
               <CardHeader className="text-center">
-                <CardTitle className="text-xl minecraft-font">
-                  Slate Node
-                </CardTitle>
+                <CardTitle className="text-xl minecraft-font">Pro</CardTitle>
                 <CardDescription className="pixel-font">
                   Great for small communities
                 </CardDescription>
@@ -320,12 +311,10 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            {/* Flint Engine */}
-            <Card className="relative minecraft-block">
+            {/* Elite */}
+            <Card className="relative minecraft-block hover:border-white transition-all duration-300">
               <CardHeader className="text-center">
-                <CardTitle className="text-xl minecraft-font">
-                  Flint Engine
-                </CardTitle>
+                <CardTitle className="text-xl minecraft-font">Elite</CardTitle>
                 <CardDescription className="pixel-font">
                   Growing communities
                 </CardDescription>
@@ -361,17 +350,15 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            {/* Shale Matrix - Most Popular */}
-            <Card className="relative border-minecraft-grass shadow-lg scale-105 shadow-minecraft-grass/30 minecraft-block">
+            {/* Ultra - Most Popular */}
+            <Card className="relative border-minecraft-grass shadow-lg scale-105 shadow-minecraft-grass/30 minecraft-block hover:border-white transition-all duration-300">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                 <Badge className="minecraft-gradient-grass text-white minecraft-block pixel-font">
                   Most Popular
                 </Badge>
               </div>
               <CardHeader className="text-center">
-                <CardTitle className="text-xl minecraft-font">
-                  Shale Matrix
-                </CardTitle>
+                <CardTitle className="text-xl minecraft-font">Ultra</CardTitle>
                 <CardDescription className="pixel-font">
                   Best value for most users
                 </CardDescription>
@@ -407,12 +394,10 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            {/* Onyx Vault */}
-            <Card className="relative minecraft-block">
+            {/* Pro+ */}
+            <Card className="relative minecraft-block hover:border-white transition-all duration-300">
               <CardHeader className="text-center">
-                <CardTitle className="text-xl minecraft-font">
-                  Onyx Vault
-                </CardTitle>
+                <CardTitle className="text-xl minecraft-font">Pro+</CardTitle>
                 <CardDescription className="pixel-font">
                   High-performance option
                 </CardDescription>
@@ -448,12 +433,10 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            {/* Cobalt Forge */}
-            <Card className="relative minecraft-block">
+            {/* Elite+ */}
+            <Card className="relative minecraft-block hover:border-white transition-all duration-300">
               <CardHeader className="text-center">
-                <CardTitle className="text-xl minecraft-font">
-                  Cobalt Forge
-                </CardTitle>
+                <CardTitle className="text-xl minecraft-font">Elite+</CardTitle>
                 <CardDescription className="pixel-font">
                   Maximum performance
                 </CardDescription>
@@ -495,16 +478,20 @@ export default function Index() {
               All plans include a 7-day free trial and 30-day money-back
               guarantee
             </p>
-            <MinecraftButton variant="link">
+            <a
+              href="https://discordapp.com/users/388343727745400834"
+              target="_blank"
+              className="text-xl text-minecraft-cyan hover:text-minecraft-grass transition-colors underline pixel-font font-semibold"
+            >
               Need a custom plan? Contact our sales team
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </MinecraftButton>
+              <ArrowRight className="ml-2 h-5 w-5 inline" />
+            </a>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section id="support" className="py-20 bg-minecraft-grass/10">
+      <section id="support" className="py-20">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6 minecraft-font">
