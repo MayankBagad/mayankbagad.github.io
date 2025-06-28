@@ -82,7 +82,7 @@ export default function Index() {
       {/* Features Section */}
       <section id="features" className="py-20 ml-auto">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center max-w-3xl mx-auto">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-12 sm:gap-16 lg:gap-20 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-minecraft-grass mb-2 minecraft-font">
                 99.9%
@@ -99,7 +99,7 @@ export default function Index() {
                 Active Players
               </div>
             </div>
-            <div className="text-center flex flex-col">
+            <div className="text-center">
               <div className="text-3xl font-bold text-minecraft-gold mb-2 minecraft-font">
                 24/7
               </div>
@@ -269,9 +269,6 @@ export default function Index() {
                     <span className="text-sm pixel-font">1 Cloud Backup</span>
                   </div>
                 </div>
-                <MinecraftButton className="w-full" variant="outline">
-                  Start Free Trial
-                </MinecraftButton>
               </CardContent>
             </Card>
 
@@ -313,9 +310,6 @@ export default function Index() {
                     <span className="text-sm pixel-font">1 Cloud Backup</span>
                   </div>
                 </div>
-                <MinecraftButton className="w-full" variant="outline">
-                  Start Free Trial
-                </MinecraftButton>
               </CardContent>
             </Card>
 
@@ -357,9 +351,6 @@ export default function Index() {
                     <span className="text-sm pixel-font">2 Cloud Backups</span>
                   </div>
                 </div>
-                <MinecraftButton className="w-full" variant="outline">
-                  Start Free Trial
-                </MinecraftButton>
               </CardContent>
             </Card>
 
@@ -406,9 +397,6 @@ export default function Index() {
                     <span className="text-sm pixel-font">2 Cloud Backups</span>
                   </div>
                 </div>
-                <MinecraftButton className="w-full">
-                  Start Free Trial
-                </MinecraftButton>
               </CardContent>
             </Card>
 
@@ -450,9 +438,6 @@ export default function Index() {
                     <span className="text-sm pixel-font">3 Cloud Backups</span>
                   </div>
                 </div>
-                <MinecraftButton className="w-full" variant="outline">
-                  Start Free Trial
-                </MinecraftButton>
               </CardContent>
             </Card>
 
@@ -494,9 +479,6 @@ export default function Index() {
                     <span className="text-sm pixel-font">3 Cloud Backups</span>
                   </div>
                 </div>
-                <MinecraftButton className="w-full" variant="outline">
-                  Start Free Trial
-                </MinecraftButton>
               </CardContent>
             </Card>
           </div>

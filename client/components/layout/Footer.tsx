@@ -1,10 +1,10 @@
-import { Zap, Github, Twitter, MessageCircle } from "lucide-react";
+import { Zap, MessageCircle, Mail } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="border-t bg-background">
       <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
@@ -21,63 +21,48 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="text-muted-foreground hover:text-minecraft-green transition-colors"
-                aria-label="Discord"
+                href="https://discord.gg/voltsystems"
+                className="text-muted-foreground hover:text-minecraft-cyan transition-colors"
+                aria-label="Discord Server"
               >
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a
-                href="#"
-                className="text-muted-foreground hover:text-minecraft-green transition-colors"
-                aria-label="Twitter"
+                href="mailto:support@voltsystems.com"
+                className="text-muted-foreground hover:text-minecraft-cyan transition-colors"
+                aria-label="Email Support"
               >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-minecraft-green transition-colors"
-                aria-label="GitHub"
-              >
-                <Github className="h-5 w-5" />
+                <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>
 
-          {/* Products */}
+          {/* Navigation */}
           <div>
-            <h3 className="font-semibold mb-4">Products</h3>
+            <h3 className="font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="#features"
                   className="text-muted-foreground hover:text-minecraft-green transition-colors"
                 >
-                  Minecraft Hosting
+                  Features
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#pricing"
                   className="text-muted-foreground hover:text-minecraft-green transition-colors"
                 >
-                  Modded Servers
+                  Pricing
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#support"
                   className="text-muted-foreground hover:text-minecraft-green transition-colors"
                 >
-                  VPS Hosting
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-minecraft-green transition-colors"
-                >
-                  Dedicated Servers
+                  Contact
                 </a>
               </li>
             </ul>
@@ -89,73 +74,26 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="#support"
                   className="text-muted-foreground hover:text-minecraft-green transition-colors"
                 >
-                  Documentation
+                  Get Help
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://discord.gg/voltsystems"
                   className="text-muted-foreground hover:text-minecraft-green transition-colors"
                 >
-                  Tutorials
+                  Discord Community
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="mailto:support@voltsystems.com"
                   className="text-muted-foreground hover:text-minecraft-green transition-colors"
                 >
-                  Contact Support
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-minecraft-green transition-colors"
-                >
-                  Server Status
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-minecraft-green transition-colors"
-                >
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-minecraft-green transition-colors"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-minecraft-green transition-colors"
-                >
-                  Refund Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-minecraft-green transition-colors"
-                >
-                  Acceptable Use
+                  Email Support
                 </a>
               </li>
             </ul>
