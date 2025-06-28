@@ -12,11 +12,11 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full py-6 backdrop-blur-2xl bg-black/10 border-b border-white/5">
+    <header className="sticky top-0 z-50 w-full py-6 border-b border-white/5">
       <div className="container flex h-16 items-center justify-between">
         {/* Left Glass Container - Logo */}
         <div className="flex items-center">
-          <div className="flex items-center space-x-3 px-6 py-3 rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-lg shadow-green-500/10">
+          <div className="flex items-center space-x-3 px-6 py-3 rounded-3xl backdrop-blur-xl bg-white/8 border border-white/15 shadow-lg shadow-green-500/15">
             <div className="flex items-center justify-center w-8 h-8 minecraft-gradient-grass minecraft-block">
               <Zap className="h-5 w-5 text-white" />
             </div>
@@ -27,35 +27,33 @@ export function Header() {
         </div>
 
         {/* Right Glass Container - Navigation & Actions */}
-        <div className="hidden md:flex items-center">
-          <div className="flex justify-center flex-row gap-12 px-6 py-3 rounded-3xl backdrop-blur-xl bg-white/5 border border-dashed border-white/10 shadow-lg shadow-cyan-500/10">
+        <div className="hidden md:flex items-center justify-center">
+          <div className="flex items-center justify-center gap-3">
             {/* Navigation Links */}
-            <nav className="flex items-center space-x-2 mr-4">
-              <a
-                href="#features"
-                className="text-lg font-medium hover:text-white transition-all duration-300 px-4 py-2 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/15 hover:backdrop-blur-md hover:shadow-lg hover:shadow-white/10 border-0 hover:border-white/10 pixel-font"
-              >
-                Features
-              </a>
-              <a
-                href="#pricing"
-                className="text-lg font-medium hover:text-white transition-all duration-300 px-4 py-2 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/15 hover:backdrop-blur-md hover:shadow-lg hover:shadow-white/10 border-0 hover:border-white/10 pixel-font"
-              >
-                Pricing
-              </a>
-              <a
-                href="#support"
-                className="text-lg font-medium hover:text-white transition-all duration-300 px-4 py-2 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/15 hover:backdrop-blur-md hover:shadow-lg hover:shadow-white/10 border-0 hover:border-white/10 pixel-font"
-              >
-                Contact
-              </a>
-            </nav>
+            <a
+              href="#features"
+              className="text-lg font-medium hover:text-white transition-all duration-300 px-6 py-3 rounded-2xl backdrop-blur-xl bg-white/8 hover:bg-white/15 hover:backdrop-blur-2xl hover:shadow-lg hover:shadow-white/15 border border-white/15 hover:border-white/25 pixel-font"
+            >
+              Features
+            </a>
+            <a
+              href="#pricing"
+              className="text-lg font-medium hover:text-white transition-all duration-300 px-6 py-3 rounded-2xl backdrop-blur-xl bg-white/8 hover:bg-white/15 hover:backdrop-blur-2xl hover:shadow-lg hover:shadow-white/15 border border-white/15 hover:border-white/25 pixel-font"
+            >
+              Pricing
+            </a>
+            <a
+              href="#support"
+              className="text-lg font-medium hover:text-white transition-all duration-300 px-6 py-3 rounded-2xl backdrop-blur-xl bg-white/8 hover:bg-white/15 hover:backdrop-blur-2xl hover:shadow-lg hover:shadow-white/15 border border-white/15 hover:border-white/25 pixel-font"
+            >
+              Contact
+            </a>
 
             {/* Separator */}
-            <div className="w-px h-6 bg-white/20 mx-2"></div>
+            <div className="w-px h-8 bg-white/20 mx-3"></div>
 
             {/* Actions */}
-            <div className="flex items-center ml-2">
+            <div className="flex items-center p-2 rounded-2xl backdrop-blur-xl bg-white/8 border border-white/15">
               <ThemeToggle />
             </div>
           </div>
@@ -63,7 +61,7 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <div className="flex md:hidden items-center">
-          <div className="flex items-center space-x-3 px-4 py-3 rounded-3xl backdrop-blur-xl bg-white/5 border border-dashed border-white/10 shadow-lg shadow-green-500/10">
+          <div className="flex items-center space-x-3 px-4 py-3 rounded-3xl backdrop-blur-xl bg-white/8 border border-white/15 shadow-lg shadow-green-500/15">
             <ThemeToggle />
             <button
               onClick={toggleMobileMenu}
@@ -83,25 +81,25 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden">
           <div className="container px-4 mt-4">
-            <div className="p-6 rounded-3xl backdrop-blur-xl bg-white/5 border border-dashed border-white/10 shadow-2xl shadow-cyan-500/20">
+            <div className="p-6 rounded-3xl backdrop-blur-xl bg-white/8 border border-white/15 shadow-2xl shadow-cyan-500/20">
               <nav className="flex flex-col space-y-3">
                 <a
                   href="#features"
-                  className="text-lg font-medium hover:text-white transition-all duration-300 py-3 px-4 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/15 hover:backdrop-blur-md hover:shadow-lg hover:shadow-white/10 border-0 hover:border-white/10 pixel-font"
+                  className="text-lg font-medium hover:text-white transition-all duration-300 py-3 px-4 rounded-2xl backdrop-blur-xl bg-white/8 hover:bg-white/15 hover:backdrop-blur-2xl hover:shadow-lg hover:shadow-white/15 border border-white/15 hover:border-white/25 pixel-font"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Features
                 </a>
                 <a
                   href="#pricing"
-                  className="text-lg font-medium hover:text-white transition-all duration-300 py-3 px-4 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/15 hover:backdrop-blur-md hover:shadow-lg hover:shadow-white/10 border-0 hover:border-white/10 pixel-font"
+                  className="text-lg font-medium hover:text-white transition-all duration-300 py-3 px-4 rounded-2xl backdrop-blur-xl bg-white/8 hover:bg-white/15 hover:backdrop-blur-2xl hover:shadow-lg hover:shadow-white/15 border border-white/15 hover:border-white/25 pixel-font"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Pricing
                 </a>
                 <a
                   href="#support"
-                  className="text-lg font-medium hover:text-white transition-all duration-300 py-3 px-4 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/15 hover:backdrop-blur-md hover:shadow-lg hover:shadow-white/10 border-0 hover:border-white/10 pixel-font"
+                  className="text-lg font-medium hover:text-white transition-all duration-300 py-3 px-4 rounded-2xl backdrop-blur-xl bg-white/8 hover:bg-white/15 hover:backdrop-blur-2xl hover:shadow-lg hover:shadow-white/15 border border-white/15 hover:border-white/25 pixel-font"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Contact

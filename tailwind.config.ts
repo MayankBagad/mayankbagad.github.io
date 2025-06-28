@@ -125,6 +125,7 @@ export default {
       fontFamily: {
         minecraft: ["Orbitron", "monospace"],
         pixel: ["JetBrains Mono", "monospace"],
+        premium: ["Sora", "DM Serif Display", "Playfair Display", "serif"],
       },
     },
   },

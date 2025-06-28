@@ -37,9 +37,9 @@ export default function Index() {
         <div className="container relative">
           <div className="mx-auto max-w-4xl text-center">
             <Badge className="mb-4 minecraft-gradient-grass text-white border-minecraft-grass/30 minecraft-block pixel-font">
-              ⚡ Lightning Fast Servers
+              🇮🇳 India-Based Servers
             </Badge>
-            <h1 className="text-4xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-minecraft-grass to-minecraft-cyan bg-clip-text text-transparent minecraft-font">
+            <h1 className="text-4xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-minecraft-grass to-minecraft-cyan bg-clip-text text-transparent premium-heading">
               Premium Minecraft
               <br />
               Server Hosting
@@ -52,7 +52,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <MinecraftButton
                 size="lg"
-                className="text-lg px-8 minecraft-gradient-grass minecraft-block minecraft-font"
+                className="text-lg px-8 minecraft-gradient-grass minecraft-block minecraft-font glow-green-hover border border-transparent"
               >
                 <Play className="mr-2 h-5 w-5" />
                 Start Your Server
@@ -60,7 +60,7 @@ export default function Index() {
               <MinecraftButton
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 border-minecraft-cyan text-minecraft-cyan hover:bg-minecraft-cyan hover:text-white minecraft-block minecraft-font"
+                className="text-lg px-8 border-minecraft-cyan text-minecraft-cyan hover:bg-minecraft-cyan hover:text-white minecraft-block minecraft-font glow-blue-hover"
                 onClick={() => {
                   document.getElementById("pricing")?.scrollIntoView({
                     behavior: "smooth",
@@ -230,38 +230,43 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Starter Plan */}
-            <Card className="relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            {/* Pebble Core */}
+            <Card className="relative minecraft-block">
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Starter</CardTitle>
-                <CardDescription>Perfect for small groups</CardDescription>
+                <CardTitle className="text-xl minecraft-font">
+                  Pebble Core
+                </CardTitle>
+                <CardDescription className="pixel-font">
+                  Perfect for small groups
+                </CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$5</span>
-                  <span className="text-muted-foreground">/month</span>
+                  <span className="text-3xl font-bold">₹85</span>
+                  <span className="text-muted-foreground"> / $1.00</span>
+                  <div className="text-sm text-muted-foreground">/month</div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">2GB RAM</span>
+                    <span className="text-sm pixel-font">1 GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">Up to 10 players</span>
+                    <span className="text-sm pixel-font">
+                      6 GB NVMe Storage
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">25GB SSD storage</span>
+                    <span className="text-sm pixel-font">
+                      100% @ 3.6 GHz CPU
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">Free subdomain</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">24/7 support</span>
+                    <span className="text-sm pixel-font">1 Cloud Backup</span>
                   </div>
                 </div>
                 <MinecraftButton className="w-full" variant="outline">
@@ -270,7 +275,95 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            {/* Pro Plan */}
+            {/* Slate Node */}
+            <Card className="relative minecraft-block">
+              <CardHeader className="text-center">
+                <CardTitle className="text-xl minecraft-font">
+                  Slate Node
+                </CardTitle>
+                <CardDescription className="pixel-font">
+                  Great for small communities
+                </CardDescription>
+                <div className="mt-4">
+                  <span className="text-3xl font-bold">₹170</span>
+                  <span className="text-muted-foreground"> / $2.00</span>
+                  <div className="text-sm text-muted-foreground">/month</div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">2 GB RAM</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">
+                      12 GB NVMe Storage
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">
+                      100% @ 3.6 GHz CPU
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">1 Cloud Backup</span>
+                  </div>
+                </div>
+                <MinecraftButton className="w-full" variant="outline">
+                  Start Free Trial
+                </MinecraftButton>
+              </CardContent>
+            </Card>
+
+            {/* Flint Engine */}
+            <Card className="relative minecraft-block">
+              <CardHeader className="text-center">
+                <CardTitle className="text-xl minecraft-font">
+                  Flint Engine
+                </CardTitle>
+                <CardDescription className="pixel-font">
+                  Growing communities
+                </CardDescription>
+                <div className="mt-4">
+                  <span className="text-3xl font-bold">₹340</span>
+                  <span className="text-muted-foreground"> / $4.00</span>
+                  <div className="text-sm text-muted-foreground">/month</div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">4 GB RAM</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">
+                      20 GB NVMe Storage
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">
+                      150% @ 3.6 GHz CPU
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">2 Cloud Backups</span>
+                  </div>
+                </div>
+                <MinecraftButton className="w-full" variant="outline">
+                  Start Free Trial
+                </MinecraftButton>
+              </CardContent>
+            </Card>
+
+            {/* Shale Matrix - Most Popular */}
             <Card className="relative border-minecraft-grass shadow-lg scale-105 shadow-minecraft-grass/30 minecraft-block">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                 <Badge className="minecraft-gradient-grass text-white minecraft-block pixel-font">
@@ -278,42 +371,39 @@ export default function Index() {
                 </Badge>
               </div>
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Pro</CardTitle>
-                <CardDescription>Great for growing communities</CardDescription>
+                <CardTitle className="text-xl minecraft-font">
+                  Shale Matrix
+                </CardTitle>
+                <CardDescription className="pixel-font">
+                  Best value for most users
+                </CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$15</span>
-                  <span className="text-muted-foreground">/month</span>
+                  <span className="text-3xl font-bold">₹540</span>
+                  <span className="text-muted-foreground"> / $6.50</span>
+                  <div className="text-sm text-muted-foreground">/month</div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">6GB RAM</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">Up to 40 players</span>
+                    <span className="text-sm pixel-font">6 GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
                     <span className="text-sm pixel-font">
-                      100GB SSD storage
+                      30 GB NVMe Storage
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
                     <span className="text-sm pixel-font">
-                      Custom domain support
+                      200% @ 3.6 GHz CPU
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">Priority support</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">Plugin manager</span>
+                    <span className="text-sm pixel-font">2 Cloud Backups</span>
                   </div>
                 </div>
                 <MinecraftButton className="w-full">
@@ -322,47 +412,86 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            {/* Enterprise Plan */}
-            <Card className="relative">
+            {/* Onyx Vault */}
+            <Card className="relative minecraft-block">
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Enterprise</CardTitle>
-                <CardDescription>For large communities</CardDescription>
+                <CardTitle className="text-xl minecraft-font">
+                  Onyx Vault
+                </CardTitle>
+                <CardDescription className="pixel-font">
+                  High-performance option
+                </CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$35</span>
-                  <span className="text-muted-foreground">/month</span>
+                  <span className="text-3xl font-bold">₹700</span>
+                  <span className="text-muted-foreground"> / $8.50</span>
+                  <div className="text-sm text-muted-foreground">/month</div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">16GB RAM</span>
+                    <span className="text-sm pixel-font">8 GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
                     <span className="text-sm pixel-font">
-                      Unlimited players
+                      40 GB NVMe Storage
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
                     <span className="text-sm pixel-font">
-                      500GB SSD storage
+                      250% @ 3.6 GHz CPU
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">Dedicated IP</span>
+                    <span className="text-sm pixel-font">3 Cloud Backups</span>
+                  </div>
+                </div>
+                <MinecraftButton className="w-full" variant="outline">
+                  Start Free Trial
+                </MinecraftButton>
+              </CardContent>
+            </Card>
+
+            {/* Cobalt Forge */}
+            <Card className="relative minecraft-block">
+              <CardHeader className="text-center">
+                <CardTitle className="text-xl minecraft-font">
+                  Cobalt Forge
+                </CardTitle>
+                <CardDescription className="pixel-font">
+                  Maximum performance
+                </CardDescription>
+                <div className="mt-4">
+                  <span className="text-3xl font-bold">₹880</span>
+                  <span className="text-muted-foreground"> / $10.75</span>
+                  <div className="text-sm text-muted-foreground">/month</div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">10 GB RAM</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
                     <span className="text-sm pixel-font">
-                      White-glove setup
+                      50 GB NVMe Storage
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="h-4 w-4 text-minecraft-grass" />
-                    <span className="text-sm pixel-font">Custom modpacks</span>
+                    <span className="text-sm pixel-font">
+                      275% @ 3.6 GHz CPU
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="h-4 w-4 text-minecraft-grass" />
+                    <span className="text-sm pixel-font">3 Cloud Backups</span>
                   </div>
                 </div>
                 <MinecraftButton className="w-full" variant="outline">
