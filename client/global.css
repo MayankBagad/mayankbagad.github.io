@@ -123,9 +123,18 @@
 
   body {
     @apply text-foreground;
-    background: linear-gradient(135deg, #0a0a0a, #0f1b29, #0d2e23);
     min-height: 100vh;
     font-family: "Orbitron", "JetBrains Mono", monospace;
+  }
+
+  /* Dark mode background */
+  .dark body {
+    background: linear-gradient(135deg, #0a0a0a, #0f1b29, #0d2e23);
+  }
+
+  /* Light mode background */
+  .light body {
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9, #e2e8f0);
   }
 
   .minecraft-font {
