@@ -21,14 +21,15 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://discord.gg/voltsystems"
-                className="text-muted-foreground hover:text-minecraft-cyan transition-colors"
+                href="https://discord.gg/EpadyruXns"
+                target="_blank"
+                className="text-muted-foreground hover:text-minecraft-cyan transition-colors cursor-pointer"
                 aria-label="Discord Server"
               >
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a
-                href="mailto:support@voltsystems.com"
+                href="mailto:minetown456@gmail.com"
                 className="text-muted-foreground hover:text-minecraft-cyan transition-colors"
                 aria-label="Email Support"
               >
@@ -74,24 +75,26 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="#support"
-                  className="text-muted-foreground hover:text-minecraft-green transition-colors"
+                  href="https://discordapp.com/users/388343727745400834"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-minecraft-green transition-colors cursor-pointer"
                 >
                   Get Help
                 </a>
               </li>
               <li>
                 <a
-                  href="https://discord.gg/voltsystems"
-                  className="text-muted-foreground hover:text-minecraft-green transition-colors"
+                  href="https://discord.gg/EpadyruXns"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-minecraft-green transition-colors cursor-pointer"
                 >
                   Discord Community
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:support@voltsystems.com"
-                  className="text-muted-foreground hover:text-minecraft-green transition-colors"
+                  href="mailto:minetown456@gmail.com"
+                  className="text-muted-foreground hover:text-minecraft-green transition-colors cursor-pointer"
                 >
                   Email Support
                 </a>

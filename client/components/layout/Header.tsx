@@ -20,7 +20,7 @@ export function Header() {
             <div className="flex items-center justify-center w-8 h-8 minecraft-gradient-grass minecraft-block">
               <Zap className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-minecraft-grass minecraft-font">
+            <span className="text-xl font-bold text-minecraft-grass general-sans">
               VoltSystems
             </span>
           </div>

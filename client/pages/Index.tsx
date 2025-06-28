@@ -28,7 +28,14 @@ import {
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
+      {/* Floating Minecraft Pickaxe */}
+      <div className="fixed bottom-5 right-5 z-40 minecraft-float">
+        <div className="w-16 h-16 bg-minecraft-gold rounded-lg flex items-center justify-center shadow-lg shadow-minecraft-gold/30">
+          <span className="text-2xl">⛏️</span>
+        </div>
+      </div>
+
       <Header />
 
       {/* Hero Section */}
@@ -52,7 +59,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <MinecraftButton
                 size="lg"
-                className="text-lg px-8 minecraft-gradient-grass minecraft-block minecraft-font glow-green-hover border border-transparent"
+                className="text-lg px-8 minecraft-gradient-grass minecraft-block minecraft-font glow-green-hover minecraft-button-enhanced border border-transparent"
               >
                 <Play className="mr-2 h-5 w-5" />
                 Start Your Server
@@ -60,7 +67,7 @@ export default function Index() {
               <MinecraftButton
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 border-minecraft-cyan text-minecraft-cyan hover:bg-minecraft-cyan hover:text-white minecraft-block minecraft-font glow-blue-hover"
+                className="text-lg px-8 border-minecraft-cyan text-minecraft-cyan hover:bg-minecraft-cyan hover:text-white minecraft-block minecraft-font glow-blue-hover minecraft-button-enhanced"
                 onClick={() => {
                   document.getElementById("pricing")?.scrollIntoView({
                     behavior: "smooth",
@@ -79,10 +86,10 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="py-20 ml-auto">
-        <div className="container">
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-12 sm:gap-16 lg:gap-20 max-w-4xl mx-auto">
+      {/* Stats Section */}
+      <section className="py-16 bg-muted/50">
+        <div className="minecraft-centered-container">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-12 sm:gap-16 lg:gap-20 w-full">
             <div className="text-center">
               <div className="text-3xl font-bold text-minecraft-grass mb-2 minecraft-font">
                 99.9%
@@ -112,9 +119,9 @@ export default function Index() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 ml-auto">
-        <div className="container">
-          <div className="text-center mb-16">
+      <section id="features" className="py-20">
+        <div className="minecraft-centered-container">
+          <div className="text-center mb-16 w-full">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4 minecraft-font">
               Why Choose{" "}
               <span className="text-minecraft-grass">VoltSystems</span>?
@@ -125,7 +132,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
             <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:scale-105 hover:shadow-green-500/30 minecraft-block cursor-pointer hover:rotate-1">
               <CardHeader>
                 <div className="w-12 h-12 minecraft-gradient-grass minecraft-block flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
