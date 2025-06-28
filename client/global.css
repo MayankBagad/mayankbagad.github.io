@@ -254,6 +254,29 @@
       0 0 20px rgba(51, 187, 255, 0.3),
       0 0 40px rgba(51, 187, 255, 0.1);
   }
+
+  /* Enhanced gradient for premium text */
+  .premium-text-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--minecraft-grass)) 0%,
+      hsl(var(--minecraft-gold)) 35%,
+      hsl(var(--minecraft-cyan)) 70%,
+      hsl(var(--minecraft-grass)) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease-in-out infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
 }
 
 @layer utilities {
