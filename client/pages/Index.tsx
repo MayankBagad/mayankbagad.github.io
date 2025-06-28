@@ -501,8 +501,7 @@ export default function Index() {
               <span className="text-minecraft-grass">Minecraft World</span>?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 pixel-font">
-              Join thousands of server owners who chose VoltSystems for
-              reliable, high-performance Minecraft hosting.
+              Experience blazing-fast, India-based Minecraft hosting with VoltSystems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <MinecraftButton
