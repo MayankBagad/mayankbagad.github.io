@@ -49,7 +49,7 @@ export default function Index() {
               Server Hosting
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto pixel-font">
-              Power your Minecraft world with VoltSystems. Lightning-fast
+              Power your Minecraft world with CygenSystems. Lightning-fast
               performance, 99.9% uptime, and 24/7 support for the ultimate
               gaming experience.
             </p>
@@ -119,7 +119,7 @@ export default function Index() {
           <div className="text-center mb-16 w-full">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4 minecraft-font">
               Why Choose{" "}
-              <span className="text-minecraft-grass">VoltSystems</span>?
+              <span className="text-minecraft-grass">CygenSystems</span>?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto pixel-font">
               Built for gamers, by gamers. Experience the difference with our
@@ -501,7 +501,7 @@ export default function Index() {
               <span className="text-minecraft-grass">Minecraft World</span>?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 pixel-font">
-              Experience blazing-fast, India-based Minecraft hosting with VoltSystems.
+              Experience blazing-fast, India-based Minecraft hosting with CygenSystems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <MinecraftButton
