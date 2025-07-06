@@ -112,7 +112,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>Made with 💖 by Volt</p>
+          <p>Cygen Systems | Made with 💖 by Volt </p>
         </div>
       </div>
     </footer>
