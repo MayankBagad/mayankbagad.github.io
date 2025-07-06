@@ -21,7 +21,7 @@ export function Header() {
               <Zap className="h-5 w-5 text-white" />
             </div>
             <span className="text-xl font-bold text-minecraft-grass manrope-bold">
-              VoltSystems
+              Cygen Systems
             </span>
           </div>
         </div>
