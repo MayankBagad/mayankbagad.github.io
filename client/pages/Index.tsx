@@ -163,10 +163,9 @@ export default function Index() {
                 <div className="w-12 h-12 minecraft-gradient-gold minecraft-block flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
                   <Clock className="h-6 w-6 text-black" />
                 </div>
-                <CardTitle className="minecraft-font">Instant Setup</CardTitle>
+                <CardTitle className="minecraft-font">7‑Day Free Trial</CardTitle>
                 <CardDescription className="pixel-font">
-                  Get your server running in under 60 seconds with our automated
-                  deployment.
+                 Start with a full‑featured trial—no credit card required.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -192,11 +191,10 @@ export default function Index() {
                   <Download className="h-6 w-6 text-white" />
                 </div>
                 <CardTitle className="minecraft-font">
-                  One-Click Modpacks
+                  Powerful CPUs
                 </CardTitle>
                 <CardDescription className="pixel-font">
-                  Install popular modpacks like FTB, Tekkit, and custom packs
-                  with just one click.
+                  Experience ultra-smooth gameplay powered by cutting-edge server CPUs.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -207,11 +205,10 @@ export default function Index() {
                   <HardDrive className="h-6 w-6 text-black" />
                 </div>
                 <CardTitle className="minecraft-font">
-                  Automatic Backups
+                  Cloud Backups
                 </CardTitle>
                 <CardDescription className="pixel-font">
-                  Never lose your progress with automated daily backups and easy
-                  restore options.
+                  Secure cloud storage keeps your server data safe and easily restorable.
                 </CardDescription>
               </CardHeader>
             </Card>
