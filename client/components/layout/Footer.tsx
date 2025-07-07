@@ -12,7 +12,7 @@ export function Footer() {
                 <Zap className="h-5 w-5 text-white" />
               </div>
               <span className="text-xl font-bold text-minecraft-green">
-                VoltSystems
+                Digicraft Systems
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -112,7 +112,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>Cygen Systems | Made with 💖 by Volt </p>
+          <p>Digicraft Systems | Made with 💖 by Volt </p>
         </div>
       </div>
     </footer>
