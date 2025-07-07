@@ -119,7 +119,7 @@ export default function Index() {
           <div className="text-center mb-16 w-full">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4 minecraft-font">
               Why Choose{" "}
-              <span className="text-minecraft-grass">Systems</span>?
+              <span className="text-minecraft-grass">Digicraft</span>?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto pixel-font">
               Built for gamers, by gamers. Experience the difference with our
